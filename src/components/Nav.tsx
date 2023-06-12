@@ -3,7 +3,7 @@ import avatar from "/images/avatar.png";
 import {useState} from 'react';
 
 export default function Nav() {
-    const [toggled, setToggled] = useState(true);
+    const [toggled, setToggled] = useState(false);
     const navMotion = {
         visible: {
           opacity: 1,
@@ -60,7 +60,7 @@ export default function Nav() {
         </div>
         
         {/* toggled */}
-        {toggled && (<div className='xl:hidden fixed flex bg-white bottom-0 left-0 w-full h-screen items-center justify-center '>
+        {toggled && (<div className='xl:hidden fixed flex bg-white bottom-0 left-0 w-full h-screen items-center justify-center z-40'>
             <motion.div
             variants={navMotion}
             initial="hidden"
