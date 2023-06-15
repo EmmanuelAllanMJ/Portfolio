@@ -6,48 +6,53 @@ import avatar from '/images/avatar.png'
 <div   class="relative mx-12 flex flex-col items-center justify-center gap-12 xl:flex-row xl:gap-36"
 >
     <div class="w-full xl:w-1/2">
-        <h1 class="text-xl">
-            Versatile creator with a flair for <span class="font-bold">innovation.</span>
+        <h1 class="text-3xl mb-5">
+            Versatile creator with a flair for <span class="font-extrabold">innovation.</span>
         </h1>
         <div class="relative">
-            <svg class="absolute h-full w-full overflow-visible" width="540" height="255" viewBox="0 0 540 255" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="border-path" d="M538 253.5V167H2L2 2" stroke="url(#paint0_linear_6_33)" stroke-width="3" stroke-linecap="round"/>
-                <defs>
-                <linearGradient id="paint0_linear_6_33" x1="2.00009" y1="50.9998" x2="589" y2="275.5" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#DC3A2B"/>
-                <stop offset="1" stop-color="#E18510"/>
-                </linearGradient>
-                </defs>
-            </svg>
-            <p id="anim-p" class="p-6 text-main">
-                Lorem ipsum dolor sit amet.<span class="font-bold text-primary">Emmanuel Allan</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, tempore.<br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur aliquid eius! Animi est dignissimos cum neque ipsum dolores ad!
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sequi eum repellat at odit soluta vitae cupiditate cum laborum delectus in veritatis enim illo atque? Mollitia ipsum beatae cum incidunt?
-            </p>
+          <svg class="absolute h-full w-full overflow-visible">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style={{ stopColor: "#DC3A2B", stopOpacity: 1 }}
+                ></stop>
+                <stop offset="100%" style={{ stopColor: "#E18510", stopOpacity: 1 }}
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              id="border-path"
+              fill="none"
+              stroke="url(#gradient)"
+              stroke-width="4"></path>
+          </svg>
+          <p id="anim-p" class="p-6 text-main">
+            Welcome to the captivating realm of <span class="font-bold">Emmanuel Allan</span>, a tech enthusiast whose passion for innovation knows no bounds. Step into the digital domain where cutting-edge technology converges with boundless imagination, and embark on a thrilling exploration of the possibilities that lie within. With a keen eye for detail and a knack for problem-solving, revels in the intricate complexities of the technological landscape. 
+            <br/>
+            <br/>
+            From diving into lines of code to crafting seamless user experiences, every endeavor is an opportunity to push the boundaries of what's possible and leave an indelible mark on the digital frontier. With a deep understanding of the latest trends and a dedication to staying ahead of the curve, I thrives on the challenges that come with shaping the future of technology.
+            
+          </p>
         </div>
         <div
         class="flex justify-center pt-12 text-center text-main text-content xl:gap-16"
         >
         <div class="w-32">
-            <h2>Art Posts</h2>
-            <p id="art-counter" class="text-xl font-bold">85</p>
+            <h2>Projects</h2>
+            <p id="art-counter" class="text-xl font-bold">35</p>
         </div>
         <div class="w-32">
-            <h2>Youtube</h2>
-            <p id="youtube-counter" class="text-xl font-bold">1.2m</p>
+            <h2>Skills</h2>
+            <p id="youtube-counter" class="text-xl font-bold">50</p>
         </div>
         <div class="w-32">
-            <h2>Reviews</h2>
+            <h2>Inspired</h2>
             <p id="reviews-counter" class="text-bold text-xl font-bold">250+</p>
         </div>
         </div>
     </div>
     <div class="relative">
-        <img class="h-full" src={avatar} alt="Hua's portrait" />
-        <div id="paint" class="absolute bottom-0 right-0 translate-y-1/4">
+        <img class="h-full w-full md:w-1/2 xl:w-full m-auto" src={avatar} alt="Emmanuel Allan's portrait" />
+        <div id="paint" class="absolute bottom-0 right-0 md:right-20 xl:right-0 translate-y-1/4 md:w-1/2 xl:w-full">
           <img src={paint} alt="paint" />
         </div>
       </div>
@@ -66,50 +71,49 @@ import avatar from '/images/avatar.png'
   </style>
 
 <script>
-    function updatePath() {
-      const textMain = document.querySelector("#anim-p") as HTMLElement
-      const path = document.querySelector("#border-path") as SVGPathElement
-  
-      if (textMain && path) {
-        path.setAttribute(
-          "d",
-          `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${
-            textMain.offsetHeight / 2
-          }`
-        )
-        const pathLength = path.getTotalLength()
-  
-        path.style.strokeDasharray = pathLength.toString()
-        path.style.strokeDashoffset = pathLength.toString()
-      }
+  function updatePath() {
+    const textMain = document.querySelector("#anim-p") as HTMLElement
+    const path = document.querySelector("#border-path") as SVGPathElement
+
+    if (textMain && path) {
+      path.setAttribute(
+        "d",
+        `M0,0 V${textMain.offsetHeight} H${textMain.offsetWidth} v${
+          textMain.offsetHeight / 3
+        }`
+      )
+      const pathLength = path.getTotalLength()
+
+      path.style.strokeDasharray = pathLength.toString()
+      path.style.strokeDashoffset = pathLength.toString()
     }
-  
-    //Increment
-    function incrementCounter(
-      selector: string,
-      current: number,
-      target: number,
-      duration: number,
-      letter: string = ""
-    ) {
-      let counter = document.getElementById(selector)
-      let stepTime = Math.abs(Math.floor(duration / target))
-      if (current < target && counter) {
-        current++
-        counter.innerText = current.toString() + letter
-        setTimeout(
-          () => incrementCounter(selector, current, target, duration, letter),
-          stepTime
-        )
-      }
+  }
+
+  //Increment
+  function incrementCounter(
+    selector: string,
+    current: number,
+    target: number,
+    duration: number,
+    letter: string = ""
+  ) {
+    let counter = document.getElementById(selector)
+    let stepTime = Math.abs(Math.floor(duration / target))
+    if (current < target && counter) {
+      current++
+      counter.innerText = current.toString() + letter
+      setTimeout(
+        () => incrementCounter(selector, current, target, duration, letter),
+        stepTime
+      )
     }
-    incrementCounter("art-counter", 0, 85, 1000)
-    incrementCounter("youtube-counter", 0, 328, 1000, "k")
-    incrementCounter("reviews-counter", 0, 250, 1000)
-  
-    // Update the path when the page loads
-    window.addEventListener("DOMContentLoaded", updatePath)
-    // Update the path when the window is resized
-    window.addEventListener("resize", updatePath)
-  </script>
-  
+  }
+  incrementCounter("art-counter", 0, 35, 1000,"+")
+  incrementCounter("youtube-counter", 0, 50, 1000, "+")
+  incrementCounter("reviews-counter", 0, 150, 1000,"+")
+
+  // Update the path when the page loads
+  window.addEventListener("DOMContentLoaded", updatePath)
+  // Update the path when the window is resized
+  window.addEventListener("resize", updatePath)
+</script>

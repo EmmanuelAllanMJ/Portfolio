@@ -36,18 +36,18 @@ export default function Nav() {
       >
         <path d="M2 2L428 2" stroke="#282828" strokeLinecap='round' strokeWidth={2}/>
       </svg>
-      <div>
+      <a href='/'>
         <img src={avatar} alt="Profile picture of Emmanuel Allan" className="w-10 h-10 rounded-full"  />
-      </div>
+      </a>
 
       {/* Title */}
-        <h1 className="text-lg font-bold">
+        <h1 className="text-lg font-bold xl:ml-36">
             <a href="/">Emmanuel Allan</a>
         </h1>
 
         <div className='gap-10 hidden xl:flex'>
             <a href="/">Home</a>
-            <a href="/services">Services</a>
+            <a href="/skills">Skills</a>
             <a href="/about">About</a>
         </div>
 
@@ -67,7 +67,7 @@ export default function Nav() {
             animate="visible"
              className='flex flex-col gap-24 text-lg'>
                 <motion.a variants={itemMotion} href="/">Home</motion.a>
-                <motion.a variants={itemMotion} href="/services">Services</motion.a>
+                <motion.a variants={itemMotion} href="/skills">Skills</motion.a>
                 <motion.a variants={itemMotion} href="/about">About</motion.a>
             </motion.div>
         </div>)}
