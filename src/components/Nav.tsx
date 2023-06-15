@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import avatar from "/images/avatar.png";
+import avatar from "/images/avatar.jpg";
 import {useState} from 'react';
 
 export default function Nav() {
