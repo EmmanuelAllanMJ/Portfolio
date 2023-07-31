@@ -12,4 +12,9 @@ export interface Skill {
 
 export interface SkillColorMap {
     [skill: string]: string;
-  }
+}
+
+export interface Socials {
+    title: string;
+    url: string;
+}

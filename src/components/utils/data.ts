@@ -1,4 +1,4 @@
-import type { Project, Skill, SkillColorMap } from "./types";
+import type { Project, Skill, SkillColorMap, Socials } from "./types";
 
 export const projects: Project[] = [
     {
@@ -50,7 +50,8 @@ export const skills: Skill[] = [
     }
 ];
 
-export const socials = [
+
+export const socials:Socials[] = [
     {
         title: "GitHub",
         url: "https://github.com/EmmanuelAllanMJ"

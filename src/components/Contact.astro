@@ -1,0 +1,20 @@
+---
+import { socials } from "./utils/data";
+import type { Socials } from "./utils/types";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+---
+
+<div class="mt-20 container mx-auto py-8 shadow">
+  <h1 class=" text-center text-xl">Let's Talk</h1>
+
+  <div class="flex items-center justify-center gap-10 p-5">
+    {
+      socials.map((social: Socials) => (
+        <a href={social.url} target="_blank" rel="noopener noreferrer">
+          {social.title == "LinkedIn" && <AiFillLinkedin size={30} />}
+          {social.title == "GitHub" && <AiFillGithub size={30} />}
+        </a>
+      ))
+    }
+  </div>
+</div>
