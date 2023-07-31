@@ -47,8 +47,8 @@ export default function Nav() {
 
         <div className='gap-10 hidden xl:flex'>
             <a href="/">Home</a>
-            <a href="/skills">Skills</a>
             <a href="/about">About</a>
+            <a href="/resume">Resume</a>
         </div>
 
         {/* Hamburger */}
