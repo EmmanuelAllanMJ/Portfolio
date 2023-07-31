@@ -105,20 +105,19 @@ export const skillColorMap: SkillColorMap = {
     "Google Cloud": "#4285F4"
 };
 
-// techStackIcons from react-icons
 export const techStackIcons = {
-    React: "FaReact",
-    Nextjs: "SiNextDotJs",
+    React: "SiReact",
+    Nextjs: "TbBrandNextjs",
     Redux: "SiRedux",
     Tailwind: "SiTailwindcss",
     "Chakra UI": "SiChakraui",
-    "Material UI": "SiMaterialUi",
+    "Material UI": "SiMaterialdesign",
     Bootstrap: "SiBootstrap",
     HTML: "SiHtml5",
     CSS: "SiCss3",
     JavaScript: "SiJavascript",
     TypeScript: "SiTypescript",
-    Node: "SiNodeDotJs",
+    Node: "DiNodejs",
     Express: "SiExpress",
     Prisma: "SiPrisma",
     SQLServer: "SiMicrosoftsqlserver",
@@ -127,5 +126,115 @@ export const techStackIcons = {
     Docker: "SiDocker",
     Azure: "SiMicrosoftazure",
     Firebase: "SiFirebase",
-    
+    Kubernetes: "SiKubernetes",
+    Expo: "SiExpo",
+    ReactNative: "TbBrandReactNative",
+    Unity: "SiUnity",
+    CSharp: "SiCsharp",
+    Java: "DiJava",
+    Python: "SiPython",
+    MySQL: "SiMysql",
+    C: "SiC",
+    CPlusPlus: "SiCplusplus",
+    Go: "SiGo",
+    R: "SiR",
+    Bash: "SiGnubash",
+    Shell: "TbBrandPowershell",
+    Git : "SiGit",
+    GitHub : "SiGithub",
+    ChromeExtension: "DiChrome",
+    Django: "SiDjango",
+    Figma : "SiFigma",
+    Premierepro: "SiAdobepremierepro",
+
+}
+import { SiReact, SiRedux, SiTailwindcss, SiChakraui, SiMaterialdesign, SiBootstrap, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiExpress, SiPrisma, SiMicrosoftsqlserver, SiMongodb, SiPostgresql, SiDocker, SiMicrosoftazure, SiFirebase, SiKubernetes, SiExpo, SiUnity, SiCsharp, SiPython, SiMysql, SiC, SiCplusplus, SiGo, SiR, SiGnubash, SiGit, SiGithub, SiDjango, SiFigma, SiAdobepremierepro} from 'react-icons/si';
+import { TbBrandNextjs, TbBrandReactNative, TbBrandPowershell } from 'react-icons/tb';
+import { DiNodejs, DiJava, DiChrome } from 'react-icons/di';
+
+export function getIconComponent(iconName) {
+    switch (iconName) {
+        case 'SiReact':
+            return SiReact;
+        case 'TbBrandNextjs':
+            return TbBrandNextjs;
+        case 'SiRedux':
+            return SiRedux;
+        case 'SiTailwindcss':
+            return SiTailwindcss;
+        case 'SiChakraui':
+            return SiChakraui;
+        case 'SiMaterialdesign':
+            return SiMaterialdesign;
+        case 'SiBootstrap':
+            return SiBootstrap;
+        case 'SiHtml5':
+            return SiHtml5;
+        case 'SiCss3':
+            return SiCss3;
+        case 'SiJavascript':
+            return SiJavascript;
+        case 'SiTypescript':
+            return SiTypescript;
+        case 'DiNodejs':
+            return DiNodejs;
+        case 'SiExpress':
+            return SiExpress;
+        case 'SiPrisma':
+            return SiPrisma;
+        case 'SiMicrosoftsqlserver':
+            return SiMicrosoftsqlserver;
+        case 'SiMongodb':
+            return SiMongodb;
+        case 'SiPostgresql':
+            return SiPostgresql;
+        case 'SiDocker':
+            return SiDocker;
+        case 'SiMicrosoftazure':
+            return SiMicrosoftazure;
+        case 'SiFirebase':
+            return SiFirebase;
+        case 'SiKubernetes':
+            return SiKubernetes;
+        case 'SiExpo':
+            return SiExpo;
+        case 'TbBrandReactNative':
+            return TbBrandReactNative;
+        case 'SiUnity':
+            return SiUnity;
+        case 'SiCsharp':
+            return SiCsharp;
+        case 'DiJava':
+            return DiJava;
+        case 'SiPython':
+            return SiPython;
+        case 'SiMysql':
+            return SiMysql;
+        case 'SiC':
+            return SiC;
+        case 'SiCplusplus':
+            return SiCplusplus;
+        case 'SiGo':
+            return SiGo;
+        case 'SiR':
+            return SiR;
+        case 'SiGnubash':
+            return SiGnubash;
+        case 'TbBrandPowershell':
+            return TbBrandPowershell;
+        case 'SiGit':
+            return SiGit;
+        case 'SiGithub':
+            return SiGithub;
+        case 'DiChrome':
+            return DiChrome;
+        case 'SiDjango':
+            return SiDjango;
+        case 'SiFigma':
+            return SiFigma;
+        case 'SiAdobepremierepro':
+            return SiAdobepremierepro;
+        default:
+            return null;
+    }
 }

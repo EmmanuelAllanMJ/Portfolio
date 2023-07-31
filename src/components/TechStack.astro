@@ -1,0 +1,30 @@
+---
+import { IconContext } from "react-icons";
+import { getIconComponent, techStackIcons } from "./utils/data";
+---
+
+<div class="px-6 pt-4 pb-2">
+    <h1 class="my-24 text-center text-xl">Tech Stack</h1>
+
+  <IconContext.Provider value={{ className: "text-gray-700 mr-2 mb-2" }}>
+    <div class="flex flex-wrap justify-center gap-5">
+      {
+        Object.entries(techStackIcons).map(([technology, icon]) => {
+          const IconComponent = getIconComponent(icon);
+          return (
+            <span class="inline-block bg-gray-100 hover:bg-gray-200 hover:cursor-pointer rounded-md px-3 py-1 text-sm font-semibold">
+              {IconComponent && (
+                <IconComponent
+                  size={75}
+                  animation-duration="0.5s"
+                  animation-delay="0.2s"
+                />
+              )}
+              #{technology}
+            </span>
+          );
+        })
+      }
+    </div>
+  </IconContext.Provider>
+</div>
