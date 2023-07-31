@@ -1,21 +1,42 @@
 ---
-import avatar from '/images/avatar.jpg'
+import avatar from "/images/avatar.jpg";
+import { projects, skillColorMap } from "./utils/data";
+import type { Project } from "./utils/types";
 ---
 
 <div class="mx-12">
   <h1 class="my-24 text-center text-xl">Latest Projects</h1>
   <div class="grid grid-cols-1 gap-24 xl:mx-48 md:grid-cols-2">
-    <div class="group relative cursor-pointer">
-      <img
-        class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
-        src={avatar}
-        alt="painting"
-      />
-      <div
-        class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"
-      >
-      </div>
-    </div>
-    
+    {
+      projects.map((project: Project) => (
+        <div class="group relative cursor-pointer">
+          <div class="bg-white max-w-sm h-full w-full rounded overflow-hidden shadow-lg relative z-10  rounded-lg transition-all group-hover:-translate-x-3">
+            <img
+              class="object-cover h-48 w-96"
+              src="https://images.pexels.com/photos/4220967/pexels-photo-4220967.jpeg"
+              alt={project.title}
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 hover:text-red-500 hover:cursor-pointer">
+                {project.title}
+              </div>
+              <p class="text-gray-700 text-base">
+                {project.description}
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+           {project.technologies.map((technology: string) => {
+            return(
+              <span class={`bg-[#${skillColorMap["React"]}] inline-block bg-gray-100 hover:bg-gray-200 hover:cursor-pointer rounded-md px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2`}>
+                #{technology}
+              </span>
+              )})
+            }
+            </div>
+          </div>
+          <div class="absolute left-0 top-0 h-full max-w-sm w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4" />
+        </div>
+      ))
+    }
   </div>
 </div>

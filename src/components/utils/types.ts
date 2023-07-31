@@ -1,0 +1,15 @@
+export interface Project {
+    title: string;
+    technologies: string[];
+    additionalTechnologies?: string[];
+    description: string;
+}
+
+export interface Skill {
+    title: string;
+    skills: string[];
+}
+
+export interface SkillColorMap {
+    [skill: string]: string;
+  }
