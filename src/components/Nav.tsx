@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import avatar from "/images/avatar.jpg";
+import avatar from "/images/avatar.webp";
 import {useState} from 'react';
 
 export default function Nav() {
@@ -67,8 +67,8 @@ export default function Nav() {
             animate="visible"
              className='flex flex-col gap-24 text-lg'>
                 <motion.a variants={itemMotion} href="/">Home</motion.a>
-                <motion.a variants={itemMotion} href="/skills">Skills</motion.a>
                 <motion.a variants={itemMotion} href="/about">About</motion.a>
+                <motion.a variants={itemMotion} href="/resume">Resume</motion.a>
             </motion.div>
         </div>)}
         </nav>

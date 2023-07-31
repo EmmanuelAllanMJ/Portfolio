@@ -1,6 +1,6 @@
 ---
 import paint from '/paint.svg'
-import avatar from '/images/avatar.jpg'
+import avatar from '/images/avatar.webp'
 ---
 
 <div   class="relative mx-12 flex flex-col items-center justify-center gap-12 xl:flex-row xl:gap-36"
@@ -29,9 +29,7 @@ import avatar from '/images/avatar.jpg'
             Welcome to the captivating realm of <span class="font-bold">Emmanuel Allan</span>, a tech enthusiast whose passion for innovation knows no bounds. Step into the digital domain where cutting-edge technology converges with boundless imagination, and embark on a thrilling exploration of the possibilities that lie within. With a keen eye for detail and a knack for problem-solving, revels in the intricate complexities of the technological landscape. 
             <br/>
             <br/>
-            From diving into lines of code to crafting seamless user experiences, every endeavor is an opportunity to push the boundaries of what's possible and leave an indelible mark on the digital frontier. git remote add origin https://github.com/EmmanuelAllanMJ/Portfolio.git
-            git branch -M main
-            git push -u origin mainWith a deep understanding of the latest trends and a dedication to staying ahead of the curve, I thrives on the challenges that come with shaping the future of technology.
+            From diving into lines of code to crafting seamless user experiences, every endeavor is an opportunity to push the boundaries of what's possible and leave an indelible mark on the digital frontier. With a deep understanding of the latest trends and a dedication to staying ahead of the curve, I thrives on the challenges that come with shaping the future of technology.
             
           </p>
         </div>
@@ -40,20 +38,20 @@ import avatar from '/images/avatar.jpg'
         >
         <div class="w-32">
             <h2>Projects</h2>
-            <p id="art-counter" class="text-xl font-bold">35</p>
+            <p id="projects-counter" class="text-xl font-bold">35</p>
         </div>
         <div class="w-32">
             <h2>Skills</h2>
-            <p id="youtube-counter" class="text-xl font-bold">50</p>
+            <p id="skills-counter" class="text-xl font-bold">25</p>
         </div>
         <div class="w-32">
-            <h2>Inspired</h2>
-            <p id="reviews-counter" class="text-bold text-xl font-bold">250+</p>
+            <h2>Reached</h2>
+            <p id="reached-counter" class="text-bold text-xl font-bold">250+</p>
         </div>
         </div>
     </div>
     <div class="relative">
-        <img class="h-full w-full md:w-1/2 xl:w-full m-auto" src={avatar} alt="Emmanuel Allan's portrait"/>
+        <img class="h-full w-full md:w-1/2 xl:w-3/4 m-auto" src={avatar} alt="Emmanuel Allan's portrait"/>
         <div id="paint" class="absolute bottom-0 right-0 md:right-20 xl:right-0 translate-y-1/4 md:w-1/2 xl:w-full">
           <img src={paint} alt="paint" />
         </div>
@@ -110,9 +108,9 @@ import avatar from '/images/avatar.jpg'
       )
     }
   }
-  incrementCounter("art-counter", 0, 35, 1000,"+")
-  incrementCounter("youtube-counter", 0, 50, 1000, "+")
-  incrementCounter("reviews-counter", 0, 150, 1000,"+")
+  incrementCounter("projects-counter", 0, 35, 1000,"+")
+  incrementCounter("skills-counter", 0, 25, 1000, "+")
+  incrementCounter("reached-counter", 0, 150, 1000,"+")
 
   // Update the path when the page loads
   window.addEventListener("DOMContentLoaded", updatePath)

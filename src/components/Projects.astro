@@ -1,12 +1,11 @@
 ---
-import avatar from "/images/avatar.jpg";
 import { projects, skillColorMap } from "./utils/data";
 import type { Project } from "./utils/types";
 ---
 
-<div class="mx-12">
+<div class="mx-12" id="projects">
   <h1 class="my-24 text-center text-xl">Latest Projects</h1>
-  <div class="grid grid-cols-1 gap-24 xl:mx-48 md:grid-cols-2">
+  <div class="grid grid-cols-1 gap-24 xl:mx-48 md:grid-cols-2 place-items-center	">
     {
       projects.map((project: Project) => (
         <div class="group relative cursor-pointer">
