@@ -1,7 +1,7 @@
 ---
 import { socials } from "./utils/data";
 import type { Socials } from "./utils/types";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { Github, Linkedin } from 'simple-icons-astro'
 ---
 
 <div class="mt-20 container mx-auto py-8 shadow">
@@ -11,8 +11,8 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
     {
       socials.map((social: Socials) => (
         <a href={social.url} target="_blank" rel="noopener noreferrer">
-          {social.title == "LinkedIn" && <AiFillLinkedin size={30} />}
-          {social.title == "GitHub" && <AiFillGithub size={30} />}
+          {social.title == "LinkedIn" && <Linkedin size={30} />}
+          {social.title == "GitHub" && <Github size={30} />}
         </a>
       ))
     }

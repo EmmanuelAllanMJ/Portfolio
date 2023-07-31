@@ -1,12 +1,10 @@
 ---
-import { IconContext } from "react-icons";
 import { getIconComponent, techStackIcons } from "./utils/data";
 ---
 
 <div class="px-6 pt-4 pb-2">
     <h1 class="my-24 text-center text-xl">Tech Stack</h1>
 
-  <IconContext.Provider value={{ className: "text-gray-700 mr-2 mb-2" }}>
     <div class="flex flex-wrap justify-center gap-5">
       {
         Object.entries(techStackIcons).map(([technology, icon]) => {
@@ -26,5 +24,4 @@ import { getIconComponent, techStackIcons } from "./utils/data";
         })
       }
     </div>
-  </IconContext.Provider>
 </div>

@@ -1,5 +1,6 @@
 import type { Project, Skill, SkillColorMap, Socials } from "./types";
 
+
 export const projects: Project[] = [
     {
         title: "Food Ordering App",
@@ -51,7 +52,7 @@ export const skills: Skill[] = [
 ];
 
 
-export const socials:Socials[] = [
+export const socials: Socials[] = [
     {
         title: "GitHub",
         url: "https://github.com/EmmanuelAllanMJ"
@@ -107,134 +108,140 @@ export const skillColorMap: SkillColorMap = {
 };
 
 export const techStackIcons = {
-    React: "SiReact",
-    Nextjs: "TbBrandNextjs",
-    Redux: "SiRedux",
-    Tailwind: "SiTailwindcss",
-    "Chakra UI": "SiChakraui",
-    "Material UI": "SiMaterialdesign",
-    Bootstrap: "SiBootstrap",
-    HTML: "SiHtml5",
-    CSS: "SiCss3",
-    JavaScript: "SiJavascript",
-    TypeScript: "SiTypescript",
-    Node: "DiNodejs",
-    Express: "SiExpress",
-    Prisma: "SiPrisma",
-    SQLServer: "SiMicrosoftsqlserver",
-    MongoDB: "SiMongodb",
-    PostgreSQL: "SiPostgresql",
-    Docker: "SiDocker",
-    Azure: "SiMicrosoftazure",
-    Firebase: "SiFirebase",
-    Kubernetes: "SiKubernetes",
-    Expo: "SiExpo",
-    ReactNative: "TbBrandReactNative",
-    Unity: "SiUnity",
-    CSharp: "SiCsharp",
-    Java: "DiJava",
-    Python: "SiPython",
-    MySQL: "SiMysql",
-    C: "SiC",
-    CPlusPlus: "SiCplusplus",
-    Go: "SiGo",
-    R: "SiR",
-    Bash: "SiGnubash",
-    Shell: "TbBrandPowershell",
-    Git : "SiGit",
-    GitHub : "SiGithub",
-    ChromeExtension: "DiChrome",
-    Django: "SiDjango",
-    Figma : "SiFigma",
-    Premierepro: "SiAdobepremierepro",
+    React: "React",
+    Nextjs: "Nextdotjs",
+    Redux: "Redux",
+    Tailwind: "Tailwindcss",
+    "Chakra UI": "Chakraui",
+    "Material UI": "Materialdegn",
+    Bootstrap: "Bootstrap",
+    HTML: "Html5",
+    CSS: "Css3",
+    JavaScript: "Javascript",
+    TypeScript: "Typescript",
+    Node: "Nodedotjs",
+    Express: "Express",
+    Prisma: "Prisma",
+    SQLServer: "Microsoftsqlserver",
+    MongoDB: "Mongodb",
+    PostgreSQL: "Postgresql",
+    Docker: "Docker",
+    Azure: "Microsoftazure",
+    Firebase: "Firebase",
+    Kubernetes: "Kubernetes",
+    Expo: "Expo",
+    ReactNative: "React",
+    Unity: "Unity",
+    CSharp: "Csharp",
+    Java: "Openjdk",
+    Python: "Python",
+    MySQL: "Mysql",
+    C: "C",
+    CPlusPlus: "Cplusplus",
+    Go: "Go",
+    R: "R",
+    Bash: "Gnubash",
+    Shell: "Powershell",
+    Git: "Git",
+    GitHub: "Github",
+    ChromeExtenon: "Googlechrome",
+    Django: "Django",
+    Figma: "Figma",
+    Premierepro: "Adobepremierepro",
+    Redis:"Redis"
 
 }
-import { SiReact, SiRedux, SiTailwindcss, SiChakraui, SiMaterialdesign, SiBootstrap, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiExpress, SiPrisma, SiMicrosoftsqlserver, SiMongodb, SiPostgresql, SiDocker, SiMicrosoftazure, SiFirebase, SiKubernetes, SiExpo, SiUnity, SiCsharp, SiPython, SiMysql, SiC, SiCplusplus, SiGo, SiR, SiGnubash, SiGit, SiGithub, SiDjango, SiFigma, SiAdobepremierepro} from 'react-icons/si';
-import { TbBrandNextjs, TbBrandReactNative, TbBrandPowershell } from 'react-icons/tb';
-import { DiNodejs, DiJava, DiChrome } from 'react-icons/di';
+import {
+    Openjdk, Redis,Powershell,Nextdotjs,Googlechrome,  Nodedotjs, React, Redux, Tailwindcss, Chakraui, Materialdesign, Bootstrap, Html5, Css3, Javascript, Typescript, Express, Prisma, Microsoftsqlserver, Mongodb, Postgresql, Docker, Microsoftazure, Firebase, Kubernetes, Expo, Unity, Csharp, Python, Mysql, C, Cplusplus, Go, R, Gnubash, Git, Github, Django, Figma, Adobepremierepro, Linkedin
+} from 'simple-icons-astro';
 
-export function getIconComponent(iconName) {
+
+export function getIconComponent(iconName: string) {
     switch (iconName) {
-        case 'SiReact':
-            return SiReact;
-        case 'TbBrandNextjs':
-            return TbBrandNextjs;
-        case 'SiRedux':
-            return SiRedux;
-        case 'SiTailwindcss':
-            return SiTailwindcss;
-        case 'SiChakraui':
-            return SiChakraui;
-        case 'SiMaterialdesign':
-            return SiMaterialdesign;
-        case 'SiBootstrap':
-            return SiBootstrap;
-        case 'SiHtml5':
-            return SiHtml5;
-        case 'SiCss3':
-            return SiCss3;
-        case 'SiJavascript':
-            return SiJavascript;
-        case 'SiTypescript':
-            return SiTypescript;
-        case 'DiNodejs':
-            return DiNodejs;
-        case 'SiExpress':
-            return SiExpress;
-        case 'SiPrisma':
-            return SiPrisma;
-        case 'SiMicrosoftsqlserver':
-            return SiMicrosoftsqlserver;
-        case 'SiMongodb':
-            return SiMongodb;
-        case 'SiPostgresql':
-            return SiPostgresql;
-        case 'SiDocker':
-            return SiDocker;
-        case 'SiMicrosoftazure':
-            return SiMicrosoftazure;
-        case 'SiFirebase':
-            return SiFirebase;
-        case 'SiKubernetes':
-            return SiKubernetes;
-        case 'SiExpo':
-            return SiExpo;
+        case 'React':
+            return React;
+        case 'Nextdotjs':
+            return Nextdotjs;
+        case 'Redux':
+            return Redux;
+        case 'Tailwindcss':
+            return Tailwindcss;
+        case 'Chakraui':
+            return Chakraui;
+        case 'Materialdegn':
+            return Materialdesign;
+        case 'Bootstrap':
+            return Bootstrap;
+        case 'Html5':
+            return Html5;
+        case 'Css3':
+            return Css3;
+        case 'Javascript':
+            return Javascript;
+        case 'Typescript':
+            return Typescript;
+        case 'Nodedotjs':
+            return Nodedotjs;
+        case 'Express':
+            return Express;
+        case 'Prisma':
+            return Prisma;
+        case 'Microsoftsqlserver':
+            return Microsoftsqlserver;
+        case 'Mongodb':
+            return Mongodb;
+        case 'Postgresql':
+            return Postgresql;
+        case 'Docker':
+            return Docker;
+        case 'Microsoftazure':
+            return Microsoftazure;
+        case 'Firebase':
+            return Firebase;
+        case 'Kubernetes':
+            return Kubernetes;
+        case 'Expo':
+            return Expo;
         case 'TbBrandReactNative':
-            return TbBrandReactNative;
-        case 'SiUnity':
-            return SiUnity;
-        case 'SiCsharp':
-            return SiCsharp;
-        case 'DiJava':
-            return DiJava;
-        case 'SiPython':
-            return SiPython;
-        case 'SiMysql':
-            return SiMysql;
-        case 'SiC':
-            return SiC;
-        case 'SiCplusplus':
-            return SiCplusplus;
-        case 'SiGo':
-            return SiGo;
-        case 'SiR':
-            return SiR;
-        case 'SiGnubash':
-            return SiGnubash;
-        case 'TbBrandPowershell':
-            return TbBrandPowershell;
-        case 'SiGit':
-            return SiGit;
-        case 'SiGithub':
-            return SiGithub;
-        case 'DiChrome':
-            return DiChrome;
-        case 'SiDjango':
-            return SiDjango;
-        case 'SiFigma':
-            return SiFigma;
-        case 'SiAdobepremierepro':
-            return SiAdobepremierepro;
+            return React;
+        case 'Unity':
+            return Unity;
+        case 'Csharp':
+            return Csharp;
+        case 'Openjdk':
+            return Openjdk;
+        case 'Python':
+            return Python;
+        case 'Mysql':
+            return Mysql;
+        case 'C':
+            return C;
+        case 'Cplusplus':
+            return Cplusplus;
+        case 'Go':
+            return Go;
+        case 'R':
+            return R;
+        case 'Gnubash':
+            return Gnubash;
+        case 'Powershell':
+            return Powershell;
+        case 'Git':
+            return Git;
+        case 'Github':
+            return Github;
+        case 'Googlechrome':
+            return Googlechrome;
+        case 'Django':
+            return Django;
+        case 'Figma':
+            return Figma;
+        case 'Adobepremierepro':
+            return Adobepremierepro;
+        case 'Linkedin':
+            return Linkedin;
+        case 'Redis':
+            return Redis;
         default:
             return null;
     }
