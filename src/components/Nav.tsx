@@ -47,7 +47,7 @@ export default function Nav() {
 
         <div className='gap-10 hidden xl:flex'>
             <a href="/">Home</a>
-            <a href="/about">About</a>
+            <a href="#contact">Contact</a>
             <a href="/resume">Resume</a>
         </div>
 
@@ -67,7 +67,7 @@ export default function Nav() {
             animate="visible"
              className='flex flex-col gap-24 text-lg'>
                 <motion.a variants={itemMotion} href="/">Home</motion.a>
-                <motion.a variants={itemMotion} href="/about">About</motion.a>
+                <motion.a variants={itemMotion} href="#contact" onClick={()=>setToggled(false)}>Contact</motion.a>
                 <motion.a variants={itemMotion} href="/resume">Resume</motion.a>
             </motion.div>
         </div>)}
