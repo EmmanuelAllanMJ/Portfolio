@@ -7,7 +7,7 @@ import type { Project } from "./utils/types";
   <h1 class="my-24 text-center text-xl">Latest Projects</h1>
   <div class="grid grid-cols-1 gap-24 xl:mx-48 md:grid-cols-2 place-items-center	">
     {
-      projects.map((project: Project) => (
+      projects.slice(0,5).map((project: Project) => (
         <div class="group relative cursor-pointer">
           <div class="bg-white max-w-sm h-full w-full overflow-hidden shadow-lg relative z-10  rounded-lg transition-all group-hover:-translate-x-3">
 
@@ -33,7 +33,7 @@ import type { Project } from "./utils/types";
         </div>
       ))
     }
-    <a href="https://github.com/EmmanuelAllanMJ?tab=repositories" class="flex justify-center items-center bg-white max-w-sm h-full w-full overflow-hidden shadow-lg relative z-10  rounded-lg transition-all group-hover:-translate-x-3">
+    <a href="/projects" class="flex justify-center items-center bg-white max-w-sm h-full w-full overflow-hidden shadow-lg relative z-10  rounded-lg transition-all group-hover:-translate-x-3">
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2 hover:text-red-500 hover:cursor-pointer">
           View All Projects

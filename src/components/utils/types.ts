@@ -3,6 +3,10 @@ export interface Project {
     technologies: string[];
     additionalTechnologies?: string[];
     description: string;
+    links: {
+        github?: string;
+        website?: string;
+    };
 }
 
 export interface Skill {

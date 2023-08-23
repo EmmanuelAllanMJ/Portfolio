@@ -41,14 +41,15 @@ export default function Nav() {
       </a>
 
       {/* Title */}
-        <h1 className="text-lg font-bold xl:ml-36">
+        <h1 className="text-lg font-bold xl:ml-72">
             <a href="/">Emmanuel Allan</a>
         </h1>
 
         <div className='gap-10 hidden xl:flex'>
             <a href="/">Home</a>
-            <a href="#contact">Contact</a>
+            <a href="/#contact">Contact</a>
             <a href="/resume">Resume</a>
+            <a href="/projects">Projects</a>
         </div>
 
         {/* Hamburger */}

@@ -3,30 +3,91 @@ import type { Project, Skill, SkillColorMap, Socials } from "./types";
 
 export const projects: Project[] = [
     {
+        title: "Postit",
+        technologies: ["React", "Nextjs", "NextAuth", "ShaadCN", "TypeScript", "Prisma", "MySQL", "Redis", "TailwindCSS", "React Query", "React Form Hook"],
+        additionalTechnologies: ["Azure", "Azure Cache for Redis", "Azure MySQL", "Azure Blob Storage", "Azure App Service"],
+        description: "A platform for sharing and discovering posts. It allows users to create and manage posts, and also allows users to like and comment on posts.",
+        links: {
+            website: "https://post-it-kappa.vercel.app/",
+        }
+    },
+    {
+        title: "Experiment Box",
+        technologies: ["Node", "Express", "MongoDB", "React", "Nextjs", "TypeScript", "TailwindCSS", "React Query", "React Form Hook", "JWT"],
+        additionalTechnologies: ["Azure CosmosDB", "Azure App Service"],
+        description: "A platform for conducting experiments and surveys. It allows users to create and manage experiments and surveys, and also allows users to participate in experiments and surveys.",
+        links: {
+            website: "https://experiment-box.vercel.app/",
+        }
+    },
+    {
+        title: "Market Place",
+        technologies: ["Django", "Django Admin", "PostgreSQL"],
+        additionalTechnologies: ["Render PostgreSQL", "Azure App Service"],
+        description: "A platform for buying and selling products. It allows users to create and manage products, and also allows users to buy and sell products.",
+        links: {
+            website: "https://puddle.azurewebsites.net/",
+            github: "https://github.com/EmmanuelAllanMJ/Marketplace"
+        }
+    },
+    {
         title: "Food Ordering App",
         technologies: ["Node", "Express", "MongoDB", "EJS"],
         additionalTechnologies: ["Stripe", "NodeMailer", "Multer", "Pdfkit"],
-        description: "Node.js-based web application that attempts to simplify company order administration. It offers a dependable and scalable system for handling client orders, inventory, and sales data."
+        description: "Node.js-based web application that attempts to simplify company order administration. It offers a dependable and scalable system for handling client orders, inventory, and sales data.",
+        links: {
+            github: "https://github.com/EmmanuelAllanMJ/Order-Node"
+        }
     },
     {
         title: "Slides | Next",
         technologies: ["TypeScript", "Prisma", "SQLServer", "Azure", "Tailwind", "React"],
-        description: "A versatile app designed for seamless song presentations. It allows users to effortlessly present songs with ready-made slides and customize presentations for a curated list of songs, enhancing the worship experience."
+        description: "A versatile app designed for seamless song presentations. It allows users to effortlessly present songs with ready-made slides and customize presentations for a curated list of songs, enhancing the worship experience.",
+        links: {
+            website: "https://hymn-slides.vercel.app"
+        }
     },
     {
         title: "Recipe App",
         technologies: ["React Native", "Redux"],
-        description: "Discover a diverse collection of recipes from various global cuisines, offering a delightful exploration of flavors and cooking traditions."
+        description: "Discover a diverse collection of recipes from various global cuisines, offering a delightful exploration of flavors and cooking traditions.",
+        links: {
+            github: "https://github.com/EmmanuelAllanMJ/MealApp_ReactNative"
+        }
     },
     {
         title: "e-KYC Verifier (EVS)",
         technologies: ["OpenCV", "DeepFace", "Flask", "Nextjs", "Azure", "Docker", "Face Recognition"],
-        description: "Unlock the power of secure and efficient identity verification. This enables seamless face recognition and authentication processes. Streamline your digital onboarding and identity verification workflows with cutting-edge technology."
+        additionalTechnologies: ["Azure Face API", "Azure App Service"],
+        description: "Unlock the power of secure and efficient identity verification. This enables seamless face recognition and authentication processes. Streamline your digital onboarding and identity verification workflows with cutting-edge technology.",
+        links: {
+            github: "https://github.com/EmmanuelAllanMJ/EVS",
+            website: "https://agreeable-pond-0dc971810.2.azurestaticapps.net/"
+        }
     },
     {
         title: "Blogger",
-        technologies: ["Node", "TypeScript", "Micro Service", "Docker"],
-        description: "Create, manage, and share your blog posts seamlessly with a microservice-based blogger app, offering enhanced scalability and independent functionality for an exceptional blogging experience."
+        technologies: ["Node", "TypeScript", "Micro Service", "Docker", "Kubernetes"],
+        description: "Create, manage, and share your blog posts seamlessly with a microservice-based blogger app, offering enhanced scalability and independent functionality for an exceptional blogging experience.",
+        links: {
+        }
+    },
+    {
+        title: "OmniFood",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        description: "A responsive website for a fictional food delivery service. It allows users to order food from a variety of restaurants.",
+        links: {
+            github: "https://github.com/EmmanuelAllanMJ/Omnifood-",
+            website: "https://omnifood-allan.netlify.app/"
+        }
+    },
+    {
+        title: "Encrypt web page chrome extension",
+        technologies: ["JavaScript", "Chrome Extension", "JQuery"],
+        description: "Encrypt web page chrome extension is a chrome extension that allows users to encrypt and decrypt web pages.",
+        links: {
+            github: "https://github.com/lugvitc/visual-encryptor"
+        }
     }
 ];
 
@@ -144,15 +205,16 @@ export const techStackIcons = {
     Shell: "Powershell",
     Git: "Git",
     GitHub: "Github",
-    ChromeExtenon: "Googlechrome",
+    ChromeExtenion: "Googlechrome",
     Django: "Django",
     Figma: "Figma",
     Premierepro: "Adobepremierepro",
-    Redis:"Redis"
+    Redis: "Redis",
+    GraphQL: "Graphql",
 
 }
 import {
-    Openjdk, Redis,Powershell,Nextdotjs,Googlechrome,  Nodedotjs, React, Redux, Tailwindcss, Chakraui, Materialdesign, Bootstrap, Html5, Css3, Javascript, Typescript, Express, Prisma, Microsoftsqlserver, Mongodb, Postgresql, Docker, Microsoftazure, Firebase, Kubernetes, Expo, Unity, Csharp, Python, Mysql, C, Cplusplus, Go, R, Gnubash, Git, Github, Django, Figma, Adobepremierepro, Linkedin
+    Openjdk, Redis, Powershell, Nextdotjs, Googlechrome, Nodedotjs, React, Redux, Tailwindcss, Chakraui, Materialdesign, Bootstrap, Html5, Css3, Javascript, Typescript, Express, Prisma, Microsoftsqlserver, Mongodb, Postgresql, Docker, Microsoftazure, Firebase, Kubernetes, Expo, Unity, Csharp, Python, Mysql, C, Cplusplus, Go, R, Gnubash, Git, Github, Django, Figma, Adobepremierepro, Linkedin, Graphql
 } from 'simple-icons-astro';
 
 
@@ -242,6 +304,8 @@ export function getIconComponent(iconName: string) {
             return Linkedin;
         case 'Redis':
             return Redis;
+        case 'Graphql':
+            return Graphql;
         default:
             return null;
     }
