@@ -41,14 +41,14 @@ export default function Nav() {
       </a>
 
       {/* Title */}
-        <h1 className="text-lg font-bold xl:ml-72">
+        <h1 className="text-lg font-bold xl:ml-48">
             <a href="/">Emmanuel Allan</a>
         </h1>
 
         <div className='gap-10 hidden xl:flex'>
             <a href="/">Home</a>
             <a href="/#contact">Contact</a>
-            <a href="/resume">Resume</a>
+            {/* <a href="/resume">Resume</a> */}
             <a href="/projects">Projects</a>
         </div>
 
@@ -69,7 +69,7 @@ export default function Nav() {
              className='flex flex-col gap-24 text-lg'>
                 <motion.a variants={itemMotion} href="/">Home</motion.a>
                 <motion.a variants={itemMotion} href="#contact" onClick={()=>setToggled(false)}>Contact</motion.a>
-                <motion.a variants={itemMotion} href="/resume">Resume</motion.a>
+                <motion.a variants={itemMotion} href="/projects">Projects</motion.a>
             </motion.div>
         </div>)}
         </nav>
